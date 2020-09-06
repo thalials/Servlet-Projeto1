@@ -13,16 +13,20 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/adicionaNome")
 public class AdicionaContatoServlet extends HttpServlet {
-	protected void service(HttpServletRequest request,
+	protected void doGet(HttpServletRequest request,
 						HttpServletResponse response)
 	throws IOException, ServletException {
 		String nome = request.getParameter("nome");
+		String email = request.getParameter("email");
+		String curso = request.getParameter("curso");
 		
 		PrintWriter out = response.getWriter();
 		
 		out.println("<html>");
 		out.println("<body>");
 		out.println("Nome: " + nome);
+		out.println("E-mail: " + email);
+		out.println("Curso: " + curso);
 		out.println("</body>");
 		out.println("</html>");
 	}
