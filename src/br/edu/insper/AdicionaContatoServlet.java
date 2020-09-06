@@ -24,9 +24,21 @@ public class AdicionaContatoServlet extends HttpServlet {
 		
 		out.println("<html>");
 		out.println("<body>");
+		out.println("<h1>");
 		out.println("Nome: " + nome);
+		out.println("</h1>");
+		
+		out.println("<h1>");
 		out.println("E-mail: " + email);
+		out.println("</h1>");
+		
+		out.println("<h1>");
 		out.println("Curso: " + curso);
+		out.println("</h1>");
+		
+		out.println("<h1>");
+		out.println("Cadastro em " + curso + " feito com sucesso!");
+		out.println("</h1>");
 		out.println("</body>");
 		out.println("</html>");
 	}
